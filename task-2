@@ -1,0 +1,13 @@
+SELECT CustomerName,City FROM [Customers];
+SELECT Country FROM [Customers] group by Country;
+SELECT Country,count(*) FROM [Customers] group by Country;
+SELECT * FROM [Customers] where City='México D.F.';
+SELECT CustomerId,City,Address FROM [Customers] where CustomerId=1;
+SELECT * FROM [Customers] where Country='Germany' or 'Spain';
+SELECT * FROM [Customers] order by Country,CustomerName desc;
+SELECT Address FROM [Customers] where Address='Null';
+ELECT min(Price) FROM [Products];
+SELECT sum(Unit) FROM [Products];
+SELECT * FROM [Customers] where CustomerName like 'A%';
+ELECT * FROM [Customers] where Country='France' or Country='Germany' or Country='Britain';
+SELECT * FROM [Orders] where OrderDate like '1996%';
